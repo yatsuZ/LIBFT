@@ -1,0 +1,107 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Avant                                              :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: yzaoui <marvin@42.fr>                      +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/11/10 12:06:44 by yzaoui            #+#    #+#              #
+#    Updated: 2022/11/21 19:08:51 by yzaoui           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#Nom du programme
+NAME = libft.a
+
+#tout mes .c qui sont des fonction et non des programmes
+PARTIE1 = ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c \
+		ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c \
+		ft_strlcpy.c ft_strlcat.c ft_toupper.c ft_tolower.c ft_strchr.c \
+		ft_strrchr.c ft_strncmp.c ft_memchr.c ft_memcmp.c ft_strnstr.c \
+		ft_atoi.c ft_calloc.c ft_strdup.c
+
+PARTIE2 = ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c \
+		ft_strmapi.c ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c \
+		ft_putendl_fd.c ft_putnbr_fd.c
+
+PARTIEbonus = ft_lstnew.c \
+
+FONC = ${PARTIE1} ${PARTIE2}
+
+#mon src = lib + fonc
+SRC = ${FONC}
+
+SRCbonus = ${PARTIEbonus}
+
+tout = ${SRC} ${SRCbonus} 
+#transforme tout les .c de src en .c
+OBJS = ${SRC:.c=.o}
+
+OBJSbonus = ${SRCbonus:.c=.o}
+
+ALLOBJS = ${OBJS} ${OBJSBONUS} 
+#compilateur
+CC = gcc
+
+#flag
+CFLAGS = -Wall -Wextra -Werror
+
+#commande de supression
+RM = rm -f
+
+#quand je fais make il va automatiquement execute linft.a
+all : ${NAME}
+
+#name execute la commande
+${NAME}: ${OBJS}
+	ar rc ${NAME} ${OBJS}
+
+##############################################################
+compile_test :
+	${CC} ${CFLAGS} ${tout} -o test
+
+compile_testval :
+	${CC} ${CFLAGS} -g ${tout} -o test
+
+blabla_exec :
+	@echo "EXECUTION !! test result:\n" 
+
+blabla_supr :
+	@echo "\nSupression du fichier Test\n"
+
+exec_test : blabla_exec
+	@./test | cat -e
+
+exec_testval : blabla_exec
+	@valgrind --leak-check=full ./test
+
+rm_test:
+	@${RM} test
+
+erased:
+	clear
+
+test: erased compile_test exec_test rm_test blabla_supr 
+
+testval: erased compile_testval exec_testval rm_test blabla_supr 
+
+norm: erased
+	norminette
+###################################################################
+
+clean:
+	${RM} ${ALLOBJS}
+
+#supr tout les .o et le programme
+fclean: clean
+	${RM} ${NAME}
+
+#recomence
+re: fclean all
+
+bonus: re ${ALLOBJS}
+	ar rc ${NAME} ${ALLOBJS} 
+
+#supr tout les .o
+#ignore les fichier aui sqpelle de lq meme mqniere aue les prog
+.PHONY : all clean fclean re
