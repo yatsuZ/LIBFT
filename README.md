@@ -77,7 +77,7 @@ Voir [ce guide](./documentation/explication/utilisation_libft.md) sur les `.a`.
 
 | ID  | Fonction         | Fait ✅ | Testée 🧪 | Notes 📌 |
 |-----|------------------|--------|-----------|-----------|
-| 1   | `ft_isalpha`     | ⬜️     | ⬜️        |           |
+| 1   | [`ft_isalpha`](./documentation/explication/fonctions/1_ft_isalpha.md)     | ✅     | ✅        |   en de hors de ascii pas pris en compte comportement indeterminer        |
 | 2   | `ft_isdigit`     | ⬜️     | ⬜️        |           |
 | 3   | `ft_isalnum`     | ⬜️     | ⬜️        |           |
 | 4   | `ft_isascii`     | ⬜️     | ⬜️        |           |

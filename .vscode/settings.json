@@ -1,0 +1,10 @@
+{
+    "editor.tabCompletion": "off",
+    "editor.stickyTabStops": true,
+    "files.associations": {
+        "libft.h": "c",
+        "libft_tester.h": "c"
+    },
+    "files.autoSave": "afterDelay",
+    "editor.insertSpaces": false
+}

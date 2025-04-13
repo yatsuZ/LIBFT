@@ -6,7 +6,17 @@
 /*   By: yzaoui <yzaoui@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 11:24:01 by yzaoui            #+#    #+#             */
-/*   Updated: 2025/04/13 11:55:23 by yzaoui           ###   ########.fr       */
+/*   Updated: 2025/04/13 17:40:26 by yzaoui           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "./libft_tester.h"
+
+int	main(int argc, char **argv)
+{
+	(void) argc;
+	(void) argv;
+
+	test_ft_isalpha();
+	return (0);
+}
