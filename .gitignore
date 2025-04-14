@@ -1,0 +1,12 @@
+.vscode/
+cache/
+code/LIBFT/obj/
+code/tests/obj/
+code/OLD_LIBFT/*.o
+*.o
+*.exe
+*.dSYM
+*.pdb
+*.log
+*.xml
+*~
