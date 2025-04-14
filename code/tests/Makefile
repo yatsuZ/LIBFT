@@ -6,7 +6,7 @@
 #    By: yzaoui <yzaoui@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/13 11:23:49 by yzaoui            #+#    #+#              #
-#    Updated: 2025/04/13 17:53:49 by yzaoui           ###   ########.fr        #
+#    Updated: 2025/04/14 15:16:21 by yzaoui           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -76,8 +76,7 @@ LIBFT_SRC =	main.c										\
 			${addprefix ${PART_1_PATH}, ${PART_1_SRC}}	\
 			${addprefix ${PART_2_PATH}, ${PART_2_SRC}}	\
 
-LIBFT_SRC_BONUS = ${LIBFT_SRC}	\
-			${addprefix ${PART_BONUS_PATH}, ${PART_BONUS_SRC}}
+LIBFT_SRC_BONUS = ${addprefix ${PART_BONUS_PATH}, ${PART_BONUS_SRC}}
 
 OBJ_PATH = obj/
 
@@ -107,8 +106,8 @@ $(PROGRAM_NAME): $(PROG_OBJ)
 	$(MAKE_LIBFT)
 	$(CC) $(C_FLAGS) $(PROG_OBJ) -o $(PROGRAM_NAME) $(ARCHIVE_CMD)
 
-bonus: $(PROG_OBJ_BONUS)
-	$(CC) $(C_FLAGS) $(PROG_OBJ_BONUS) $(PROG_OBJ) -o $(PROGRAM_NAME) $(ARCHIVE_CMD)
+bonus: $(PROGRAM_NAME) $(PROG_OBJ_BONUS)
+	$(CC) $(C_FLAGS) $(PROG_OBJ) $(PROG_OBJ_BONUS) -o $(PROGRAM_NAME) $(ARCHIVE_CMD)
 
 $(OBJ_PATH)%.o: %.c
 	mkdir -p $(@D)

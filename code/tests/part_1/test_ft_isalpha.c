@@ -6,7 +6,7 @@
 /*   By: yzaoui <yzaoui@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 17:08:29 by yzaoui            #+#    #+#             */
-/*   Updated: 2025/04/13 21:41:26 by yzaoui           ###   ########.fr       */
+/*   Updated: 2025/04/14 15:11:19 by yzaoui           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 int test_ft_isalpha(void)
 {
 	printf("--- isalpha : ");
-	int c = -1;
+	int c = -10;
 	while (c != 300)
 	{
 		if ((isalpha(c) != 0) != (ft_isalpha(c) != 0))
