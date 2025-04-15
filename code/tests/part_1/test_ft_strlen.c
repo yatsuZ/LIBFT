@@ -6,15 +6,14 @@
 /*   By: yzaoui <yzaoui@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 02:54:48 by yzaoui            #+#    #+#             */
-/*   Updated: 2025/04/15 03:04:50 by yzaoui           ###   ########.fr       */
+/*   Updated: 2025/04/15 15:09:53 by yzaoui           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./../libft_tester.h"
 
 // comparer avec la vrai fonction 
-// Je dois tester strlen avec differnete chaien de caractere differente
-// certain cas ne son pas similaire !!
+// Je dois tester strlen avec differnete chaine de caractere
 int	test_ft_strlen(void)
 {
 	int i;

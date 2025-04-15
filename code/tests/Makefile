@@ -6,7 +6,7 @@
 #    By: yzaoui <yzaoui@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/13 11:23:49 by yzaoui            #+#    #+#              #
-#    Updated: 2025/04/14 15:16:21 by yzaoui           ###   ########.fr        #
+#    Updated: 2025/04/15 22:21:13 by yzaoui           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -121,7 +121,7 @@ fclean: clean
 	$(MAKE_LIBFT) fclean
 	rm -f $(PROGRAM_NAME)
 
-val: bonus
+val: re bonus
 	${VAL_CMD} ./${PROGRAM_NAME}
 
 re: fclean all
