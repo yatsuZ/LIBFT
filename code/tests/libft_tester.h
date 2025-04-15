@@ -6,7 +6,7 @@
 /*   By: yzaoui <yzaoui@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 17:03:59 by yzaoui            #+#    #+#             */
-/*   Updated: 2025/04/14 22:27:21 by yzaoui           ###   ########.fr       */
+/*   Updated: 2025/04/15 02:56:27 by yzaoui           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,17 +17,20 @@
 /*                                 INCLUDES                                   */
 /* ************************************************************************** */
 
-#include "./../LIBFT/libft.h"// ICI metre le chemin de votre header
-#include <stdio.h>
-#include <ctype.h>
-
+# include "./../LIBFT/libft.h"// ICI metre le chemin de votre header
+# include <stdio.h>
+# include <ctype.h>
+# include <string.h>
 /* ************************************************************************** */
 /*                                 PARTIE 1                                   */
 /* ************************************************************************** */
 
-int test_ft_isalpha(void);
-int test_ft_isdigit(void);
-int test_ft_isalnum(void);
+int	test_ft_isalpha(void);
+int	test_ft_isdigit(void);
+int	test_ft_isalnum(void);
+int	test_ft_isascii(void);
+int	test_ft_isprint(void);
+int	test_ft_strlen(void);
 
 /* ************************************************************************** */
 /*                                 PARTIE 2                                   */

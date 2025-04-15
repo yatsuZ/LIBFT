@@ -6,7 +6,7 @@
 /*   By: yzaoui <yzaoui@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 12:28:13 by yzaoui            #+#    #+#             */
-/*   Updated: 2025/04/14 22:25:13 by yzaoui           ###   ########.fr       */
+/*   Updated: 2025/04/15 02:56:15 by yzaoui           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,19 @@
 /*                                 INCLUDES                                   */
 /* ************************************************************************** */
 
-#include <limits.h>
+# include <limits.h>
+# include <stddef.h>
+
 /* ************************************************************************** */
 /*                                 PARTIE 1                                   */
 /* ************************************************************************** */
 
-int ft_isalpha(int c);
-int	ft_isdigit(int c);
-int	ft_isalnum(int c);
+int		ft_isalpha(int c);
+int		ft_isdigit(int c);
+int		ft_isalnum(int c);
+int		ft_isascii(int c);
+int		ft_isprint(int c);
+size_t	ft_strlen(const char *s);
 
 /* ************************************************************************** */
 /*                                 PARTIE 2                                   */
@@ -38,8 +43,7 @@ typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
-} t_list;
-
+}	t_list;
 
 /* ************************************************************************** */
 /*                                FONCTIONS BONUS                             */

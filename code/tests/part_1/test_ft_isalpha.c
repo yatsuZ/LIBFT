@@ -6,7 +6,7 @@
 /*   By: yzaoui <yzaoui@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 17:08:29 by yzaoui            #+#    #+#             */
-/*   Updated: 2025/04/14 15:31:08 by yzaoui           ###   ########.fr       */
+/*   Updated: 2025/04/15 03:04:50 by yzaoui           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 // comparer avec la vrai fonction faire une boucle de -10 a 300
 // certain cas ne son pas similaire !!
-int test_ft_isalpha(void)
+int	test_ft_isalpha(void)
 {
-	printf("--- isalpha : ");
+	printf("--- isalpha\t: ");
 	int c = -10;
 	while (c != 300)
 	{
@@ -24,6 +24,6 @@ int test_ft_isalpha(void)
 			return (printf("Error!!! with %c %d, | %d %d\n", (c), c, isalpha(c), ft_isalpha(c)), 1);
 		c++;
 	}
-	printf("✅\n");
+	printf("\t✅\n");
 	return (0);
 }
