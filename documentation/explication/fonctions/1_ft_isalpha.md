@@ -1,5 +1,16 @@
 # ft_isalpha
 
+- [ft\_isalpha](#ft_isalpha)
+	- [Prototype](#prototype)
+	- [Description](#description)
+	- [Valeur de retour](#valeur-de-retour)
+	- [Comportement](#comportement)
+	- [Pièges à éviter](#pièges-à-éviter)
+	- [Différences avec la version standard](#différences-avec-la-version-standard)
+	- [Exemple d'utilisation](#exemple-dutilisation)
+	- [Voir aussi](#voir-aussi)
+
+
 ## Prototype
 ```c
 int ft_isalpha(int c);

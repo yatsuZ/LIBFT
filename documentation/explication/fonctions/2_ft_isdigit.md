@@ -1,5 +1,16 @@
 # ft_isdigit - Vérification de caractère numérique
 
+- [ft\_isdigit - Vérification de caractère numérique](#ft_isdigit---vérification-de-caractère-numérique)
+	- [Prototype](#prototype)
+	- [Description](#description)
+	- [Valeur de retour](#valeur-de-retour)
+	- [Comportement](#comportement)
+	- [Cas limites à tester](#cas-limites-à-tester)
+	- [Pièges à éviter](#pièges-à-éviter)
+	- [Différences avec la version standard](#différences-avec-la-version-standard)
+	- [Exemple d'utilisation](#exemple-dutilisation)
+	- [Voir aussi](#voir-aussi)
+
 ## Prototype
 ```c
 int ft_isdigit(int c);
@@ -16,14 +27,6 @@ La fonction `ft_isdigit` vérifie si le caractère passé en argument est un chi
 - Fonctionne avec le jeu de caractères ASCII (7 bits)
 - Ne tient pas compte des locales (comportement identique en toutes locales)
 - Gère correctement EOF (-1) et les valeurs hors plage ASCII
-
-## Implémentation recommandée
-```c
-int ft_isdigit(int c)
-{
-    return (c >= '0' && c <= '9');
-}
-```
 
 ## Cas limites à tester
 ```c

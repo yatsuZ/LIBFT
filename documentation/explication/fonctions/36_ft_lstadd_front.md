@@ -1,6 +1,6 @@
-# ft_lstadd_back - Ajout d'un élément à la fin d'une liste chaînée
+# ft_lstadd_front - Ajout d'un élément en tête de liste chaînée
 
-- [ft\_lstadd\_back - Ajout d'un élément à la fin d'une liste chaînée](#ft_lstadd_back---ajout-dun-élément-à-la-fin-dune-liste-chaînée)
+- [ft\_lstadd\_front - Ajout d'un élément en tête de liste chaînée](#ft_lstadd_front---ajout-dun-élément-en-tête-de-liste-chaînée)
 	- [Prototype](#prototype)
 	- [Description](#description)
 	- [Paramètres](#paramètres)
@@ -14,12 +14,12 @@
 ## Prototype
 
 ```c
-void ft_lstadd_back(t_list **lst, t_list *new);
+void ft_lstadd_front(t_list **lst, t_list *new);
 ```
 
 ## Description
 
-La fonction `ft_lstadd_back` ajoute l'élément `new` à la fin de la liste chaînée pointée par `lst`.
+La fonction `ft_lstadd_front` ajoute l'élément `new` au début de la liste chaînée pointée par `lst`.
 
 ## Paramètres
 
@@ -32,10 +32,9 @@ Aucune.
 
 ## Comportement
 
-* La fonction ajoute l'élément `new` à la fin de la liste chaînée pointée par `lst`.
+* La fonction ajoute l'élément `new` au début de la liste chaînée pointée par `lst`.
 * Si `lst` est `NULL`, le comportement de la fonction est indéfini.
 * Si `new` est `NULL`, la liste n'est pas modifiée.
-* Si la liste est vide (`*lst` est `NULL`), `new` devient le premier élément de la liste.
 * La fonction ne retourne aucune valeur.
 
 ## Cas limites à tester
@@ -50,8 +49,7 @@ Aucune.
 
 * Ne pas oublier de gérer le cas où `lst` est `NULL`.
 * Ne pas modifier la liste si `new` est `NULL`.
-* Ne pas oublier de mettre à jour le pointeur `next` du dernier élément de la liste pour qu'il pointe vers `new`.
-* Ne pas oublier de gérer le cas où la liste est vide.
+* Ne pas oublier de mettre à jour le pointeur `lst` pour qu'il pointe vers le nouvel élément en tête de liste.
 
 ## Exemple d'utilisation
 
@@ -64,13 +62,14 @@ int main(void)
     t_list *list = NULL;
     int data1 = 1;
     int data2 = 2;
-    int data3 = 3;
 
-    ft_lstadd_back(&list, ft_lstnew(&data1));
-    ft_lstadd_back(&list, ft_lstnew(&data2));
-    ft_lstadd_back(&list, ft_lstnew(&data3));
+    t_list *new_element1 = ft_lstnew(&data1);
+    t_list *new_element2 = ft_lstnew(&data2);
 
-    // La liste contient maintenant data1 -> data2 -> data3 -> NULL
+    ft_lstadd_front(&list, new_element1);
+    ft_lstadd_front(&list, new_element2);
+
+    // La liste contient maintenant new_element2 -> new_element1 -> NULL
 
     // ...
 
@@ -89,5 +88,3 @@ int main(void)
 ## Voir aussi
 
 * `ft_lstnew(3)`
-* `ft_lstadd_front(3)`
-* `ft_lstlast(3)`
