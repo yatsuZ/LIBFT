@@ -77,12 +77,12 @@ Voir [ce guide](./documentation/explication/utilisation_libft.md) sur les `.a`.
 
 | ID  | Fonction         | Fait ✅ | Testée 🧪 | Notes 📌 |
 |-----|------------------|--------|-----------|-----------|
-| 1   | [`ft_isalpha`](./documentation/explication/fonctions/1_ft_isalpha.md)     | ✅     | ✅        |   en de hors de ascii pas pris en compte comportement indeterminer        |
-| 2   | `ft_isdigit`     | ⬜️     | ⬜️        |           |
-| 3   | `ft_isalnum`     | ⬜️     | ⬜️        |           |
-| 4   | `ft_isascii`     | ⬜️     | ⬜️        |           |
-| 5   | `ft_isprint`     | ⬜️     | ⬜️        |           |
-| 6   | `ft_strlen`      | ⬜️     | ⬜️        |           |
+| 1   | `ft_isalpha`     | ✅     | ✅        |   en de hors de ascii pas pris en compte comportement indeterminer        |
+| 2   | `ft_isdigit`     | ✅     | ✅        |   en de hors de ascii pas pris en compte comportement indeterminer        |
+| 3   | `ft_isalnum`     | ✅     | ✅        |   en de hors de ascii pas pris en compte comportement indeterminer        |
+| 4   | `ft_isascii`     | ✅     | ✅        |           |
+| 5   | `ft_isprint`     | ✅     | ✅        |   en de hors de ascii pas pris en compte comportement indeterminer        |
+| 6   | `ft_strlen`      | ✅     | ✅        |           |
 | 7   | `ft_memset`      | ⬜️     | ⬜️        |           |
 | 8   | `ft_bzero`       | ⬜️     | ⬜️        |           |
 | 9   | `ft_memcpy`      | ⬜️     | ⬜️        |           |
