@@ -6,7 +6,7 @@
 /*   By: yzaoui <yzaoui@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 11:24:01 by yzaoui            #+#    #+#             */
-/*   Updated: 2025/04/16 00:53:10 by yzaoui           ###   ########.fr       */
+/*   Updated: 2025/04/17 01:17:59 by yzaoui           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,23 +37,30 @@ void show_memcpy_vs_memmove(void)
 
 static void	test_part1(void)
 {
-	test_ft_isalpha();
-	test_ft_isdigit();
-	test_ft_isalnum();
-	test_ft_isascii();
-	test_ft_isprint();
-	test_ft_strlen();
-	test_ft_memset();
-	test_ft_bzero();
-	test_ft_memcpy();
-	test_ft_memmove();
+	test_ft_isalpha();	// 1
+	test_ft_isdigit();	// 2
+	test_ft_isalnum();	// 3
+	test_ft_isascii();	// 4
+	test_ft_isprint();	// 5
+	test_ft_strlen();	// 6
+	test_ft_memset();	// 7
+	test_ft_bzero();	// 8
+	test_ft_memcpy();	// 9
+	test_ft_memmove();	// 10
 	// show_memcpy_vs_memmove();
-	test_ft_strlcpy();
-	test_ft_strlcat();
-	test_ft_toupper();
-	test_ft_tolower();
-	test_ft_strchr();
-	test_ft_strrchr();
+	test_ft_strlcpy();	// 11
+	test_ft_strlcat();	// 12
+	test_ft_toupper();	// 13
+	test_ft_tolower();	// 14
+	test_ft_strchr();	// 15
+	test_ft_strrchr();	// 16
+	test_ft_strncmp();	// 17
+	test_ft_memchr();	// 18
+	test_ft_memcmp();	// 19
+	test_ft_strnstr();	// 20
+	test_ft_atoi();		// 21
+	test_ft_calloc();	// 22
+	test_ft_strdup();	//23
 }
 
 int	main(void)

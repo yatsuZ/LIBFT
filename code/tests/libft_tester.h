@@ -6,7 +6,7 @@
 /*   By: yzaoui <yzaoui@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 17:03:59 by yzaoui            #+#    #+#             */
-/*   Updated: 2025/04/16 00:55:07 by yzaoui           ###   ########.fr       */
+/*   Updated: 2025/04/17 01:18:12 by yzaoui           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@
 # include <ctype.h>
 # include <string.h>
 # include <stdlib.h>
+# include <errno.h>
 
 /* ************************************************************************** */
 /*                                 PARTIE 1                                   */
@@ -44,7 +45,14 @@ int	test_ft_strlcat(void);
 int	test_ft_toupper(void);
 int	test_ft_tolower(void);
 int	test_ft_strchr(void);
-int test_ft_strrchr(void);
+int	test_ft_strrchr(void);
+int	test_ft_strncmp(void);
+int test_ft_memchr(void);
+int test_ft_memcmp(void);
+int test_ft_strnstr(void);
+int test_ft_atoi(void);
+int test_ft_calloc(void);
+int test_ft_strdup(void);
 
 /* ************************************************************************** */
 /*                                 PARTIE 2                                   */

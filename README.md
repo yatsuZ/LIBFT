@@ -93,13 +93,13 @@ Voir [ce guide](./documentation/explication/utilisation_libft.md) sur les `.a`.
 | 14  | `ft_tolower`     | ✅     | ✅        |           |
 | 15  | `ft_strchr`      | ✅     | ✅        |           |
 | 16  | `ft_strrchr`     | ✅     | ✅        |           |
-| 17  | `ft_strncmp`     | ⬜️     | ⬜️        |           |
-| 18  | `ft_memchr`      | ⬜️     | ⬜️        |           |
-| 19  | `ft_memcmp`      | ⬜️     | ⬜️        |           |
-| 20  | `ft_strnstr`     | ⬜️     | ⬜️        |           |
-| 21  | `ft_atoi`        | ⬜️     | ⬜️        |           |
-| 22  | `ft_calloc`      | ⬜️     | ⬜️        |           |
-| 23  | `ft_strdup`      | ⬜️     | ⬜️        |           |
+| 17  | `ft_strncmp`     | ✅     | ✅        |           |
+| 18  | `ft_memchr`      | ✅     | ✅        |           |
+| 19  | `ft_memcmp`      | ✅     | ✅        |           |
+| 20  | `ft_strnstr`     | ✅     | ✅        |           |
+| 21  | `ft_atoi`        | ✅     | ✅        |           |
+| 22  | `ft_calloc`      | ✅     | ✅        |           |
+| 23  | `ft_strdup`      | ✅     | ✅        |           |
 
 ### Partie 2 — Fonctions supplémentaires
 
