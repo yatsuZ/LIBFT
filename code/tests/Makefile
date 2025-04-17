@@ -6,7 +6,7 @@
 #    By: yzaoui <yzaoui@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/13 11:23:49 by yzaoui            #+#    #+#              #
-#    Updated: 2025/04/15 22:21:13 by yzaoui           ###   ########.fr        #
+#    Updated: 2025/04/17 16:54:40 by yzaoui           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -56,10 +56,7 @@ PART_2_SRC = test_ft_substr.c		\
 			 test_ft_itoa.c			\
 			 test_ft_strmapi.c		\
 			 test_ft_striteri.c		\
-			 test_ft_putchar_fd.c	\
-			 test_ft_putstr_fd.c	\
-			 test_ft_putendl_fd.c	\
-			 test_ft_putnbr_fd.c
+			 test_ft_put.c
 
 PART_BONUS_PATH = part_bonus/
 PART_BONUS_SRC = 	test_ft_lstnew_bonus.c			\

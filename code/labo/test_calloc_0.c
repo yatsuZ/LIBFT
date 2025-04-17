@@ -31,4 +31,4 @@ int main(void)
 	free(t);
 	return (0);
 }
-// $> cc test_malloc_0.c && ./aout
+// $> cc test_calloc_0.c && ./aout

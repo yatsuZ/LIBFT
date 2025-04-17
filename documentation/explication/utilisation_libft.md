@@ -16,6 +16,7 @@
 	- [🛠 Exemple de Makefile optimisé](#-exemple-de-makefile-optimisé)
 	- [💡 Bonnes pratiques](#-bonnes-pratiques)
 	- [🚨 Dépannage](#-dépannage)
+	- [Ptite info](#ptite-info)
 
 
 ## 🔍 Qu'est-ce qu'un fichier `.a` ?
@@ -164,3 +165,8 @@ re: fclean all
   - La fonction existe bien dans `libft.a` (`nm libft.a | grep fonction`)
   - L'ordre de compilation est correct (sources -> libs)
   - Le header contient bien le prototype
+
+## Ptite info
+
+```ulimit -v <limite>;```
+pour tester avec une taille de memoire restreinte.

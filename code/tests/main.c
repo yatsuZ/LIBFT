@@ -6,7 +6,7 @@
 /*   By: yzaoui <yzaoui@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 11:24:01 by yzaoui            #+#    #+#             */
-/*   Updated: 2025/04/17 01:17:59 by yzaoui           ###   ########.fr       */
+/*   Updated: 2025/04/17 16:56:12 by yzaoui           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,11 +63,24 @@ static void	test_part1(void)
 	test_ft_strdup();	//23
 }
 
+static void	test_part2(void)
+{
+	test_ft_substr();	// 24
+	test_ft_strjoin();	// 25
+	test_ft_strtrim();	// 26
+	test_ft_split();	// 27
+	test_ft_itoa();		// 28
+	test_ft_strmapi();	// 29
+	test_ft_striteri();	// 30
+	test_ft_putfd();	// 31-34
+}
+
 int	main(void)
 {
 	// (void) argc;
 	// (void) argv;
 
 	test_part1();
+	test_part2();
 	return (0);
 }

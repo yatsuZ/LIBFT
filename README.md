@@ -105,17 +105,17 @@ Voir [ce guide](./documentation/explication/utilisation_libft.md) sur les `.a`.
 
 | ID  | Fonction         | Fait ✅ | Testée 🧪 | Notes 📌 |
 |-----|------------------|--------|-----------|------------|
-| 24  | `ft_substr`      | ⬜️     | ⬜️        |            |
-| 25  | `ft_strjoin`     | ⬜️     | ⬜️        |            |
-| 26  | `ft_strtrim`     | ⬜️     | ⬜️        |            |
-| 27  | `ft_split`       | ⬜️     | ⬜️        |            |
-| 28  | `ft_itoa`        | ⬜️     | ⬜️        |            |
-| 29  | `ft_strmapi`     | ⬜️     | ⬜️        |            |
-| 30  | `ft_striteri`    | ⬜️     | ⬜️        |            |
-| 31  | `ft_putchar_fd`  | ⬜️     | ⬜️        |            |
-| 32  | `ft_putstr_fd`   | ⬜️     | ⬜️        |            |
-| 33  | `ft_putendl_fd`  | ⬜️     | ⬜️        |            |
-| 34  | `ft_putnbr_fd`   | ⬜️     | ⬜️        |            |
+| 24  | `ft_substr`      | ✅     | ✅        |            |
+| 25  | `ft_strjoin`     | ✅     | ✅        |            |
+| 26  | `ft_strtrim`     | ✅     | ✅        |            |
+| 27  | `ft_split`       | ✅     | ✅        |            |
+| 28  | `ft_itoa`        | ✅     | ✅        |            |
+| 29  | `ft_strmapi`     | ✅     | ✅        |            |
+| 30  | `ft_striteri`    | ✅     | ✅        |            |
+| 31  | `ft_putchar_fd`  | ✅     | ✅        |            |
+| 32  | `ft_putstr_fd`   | ✅     | ✅        |            |
+| 33  | `ft_putendl_fd`  | ✅     | ✅        |            |
+| 34  | `ft_putnbr_fd`   | ✅     | ✅        |            |
 
 ### Partie bonus — Listes chaînées
 
