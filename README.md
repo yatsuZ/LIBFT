@@ -16,6 +16,7 @@
 		- [Partie 2 — Fonctions supplémentaires](#partie-2--fonctions-supplémentaires)
 		- [Partie bonus — Listes chaînées](#partie-bonus--listes-chaînées)
 	- [🧪 Tests](#-tests)
+		- [🚀 Lancer les tests](#-lancer-les-tests)
 	- [📒 Documentation personnelle](#-documentation-personnelle)
 	- [📚 Ressources](#-ressources)
 	- [👤 Auteur](#-auteur)
@@ -122,8 +123,8 @@ Voir [ce guide](./documentation/explication/utilisation_libft.md) sur les `.a`.
 ```c
 typedef struct s_list
 {
-    void          *content;
-    struct s_list *next;
+	void			*content;
+	struct s_list	*next;
 } t_list;
 ```
 
@@ -131,22 +132,42 @@ typedef struct s_list
 
 | ID  | Fonction            | Fait ✅ | Testée 🧪 | Notes 📌 |
 |-----|---------------------|--------|-----------|----------|
-| 35  | `ft_lstnew`         | ⬜️     | ⬜️        |          |
-| 36  | `ft_lstadd_front`   | ⬜️     | ⬜️        |          |
-| 37  | `ft_lstsize`        | ⬜️     | ⬜️        |          |
-| 38  | `ft_lstlast`        | ⬜️     | ⬜️        |          |
-| 39  | `ft_lstadd_back`    | ⬜️     | ⬜️        |          |
-| 40  | `ft_lstdelone`      | ⬜️     | ⬜️        |          |
-| 41  | `ft_lstclear`       | ⬜️     | ⬜️        |          |
-| 42  | `ft_lstiter`        | ⬜️     | ⬜️        |          |
-| 43  | `ft_lstmap`         | ⬜️     | ⬜️        |          |
+| 35  | `ft_lstnew`         | ✅     | ✅        |          |
+| 36  | `ft_lstadd_front`   | ✅     | ✅        |          |
+| 37  | `ft_lstsize`        | ✅     | ✅        |          |
+| 38  | `ft_lstlast`        | ✅     | ✅        |          |
+| 39  | `ft_lstadd_back`    | ✅     | ✅        |          |
+| 40  | `ft_lstdelone`      | ✅     | ✅        |          |
+| 41  | `ft_lstclear`       | ✅     | ✅        |          |
+| 42  | `ft_lstiter`        | ✅     | ✅        |          |
+| 43  | `ft_lstmap`         | ✅     | ✅        |          |
 
 ---
 
 ## 🧪 Tests
 
-Un dossier `code/tests/` contiendra des fichiers pour tester indépendamment chaque fonction.  
-👉 Exécutable de test à venir : `tester`
+Un dossier `code/tests/` contient des fichiers de test pour chaque fonction.  
+Les tests sont regroupés dans un exécutable appelé `tester`.
+
+### 🚀 Lancer les tests
+
+Depuis le dossier racine du projet :
+
+```bash
+cd ./code/tests
+make val
+```
+
+Cette commande :
+
+- Compile l’exécutable `tester`
+- L’exécute avec `valgrind` pour détecter les fuites de mémoire
+- Affiche les résultats de chaque fonction testée
+
+💡 Le programme `tester` appelle automatiquement chaque fonction de la libft avec plusieurs cas d’usage.
+qui se situe dans `./code/LIBFT`
+
+vous pouvez essaye aussi des tester exterieur.
 
 ---
 

@@ -6,7 +6,7 @@
 #    By: yzaoui <yzaoui@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/13 12:17:34 by yzaoui            #+#    #+#              #
-#    Updated: 2025/04/15 16:24:26 by yzaoui           ###   ########.fr        #
+#    Updated: 2025/04/18 16:56:25 by yzaoui           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -80,7 +80,7 @@ PROG_OBJ_BONUS = ${addprefix ${OBJ_PATH}, ${LIBFT_SRC_BONUS:.c=.o}}
 
 RM = rm -rf
 CC = cc
-C_FLAGS = -Wall -Wextra -Werror # -g3
+C_FLAGS = -Wall -Wextra -Werror -g3
 AR = ar -rc
 
 PROGRAM_NAME = libft.a

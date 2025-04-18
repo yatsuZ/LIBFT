@@ -6,7 +6,7 @@
 #    By: yzaoui <yzaoui@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/13 11:23:49 by yzaoui            #+#    #+#              #
-#    Updated: 2025/04/17 16:54:40 by yzaoui           ###   ########.fr        #
+#    Updated: 2025/04/17 17:45:13 by yzaoui           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -103,7 +103,8 @@ $(PROGRAM_NAME): $(PROG_OBJ)
 	$(MAKE_LIBFT)
 	$(CC) $(C_FLAGS) $(PROG_OBJ) -o $(PROGRAM_NAME) $(ARCHIVE_CMD)
 
-bonus: $(PROGRAM_NAME) $(PROG_OBJ_BONUS)
+bonus: $(PROG_OBJ) $(PROG_OBJ_BONUS)
+	$(MAKE_LIBFT) bonus
 	$(CC) $(C_FLAGS) $(PROG_OBJ) $(PROG_OBJ_BONUS) -o $(PROGRAM_NAME) $(ARCHIVE_CMD)
 
 $(OBJ_PATH)%.o: %.c
@@ -121,4 +122,4 @@ fclean: clean
 val: re bonus
 	${VAL_CMD} ./${PROGRAM_NAME}
 
-re: fclean all
+re: fclean bonus

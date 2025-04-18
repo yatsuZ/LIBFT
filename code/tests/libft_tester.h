@@ -6,7 +6,7 @@
 /*   By: yzaoui <yzaoui@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 17:03:59 by yzaoui            #+#    #+#             */
-/*   Updated: 2025/04/17 16:55:57 by yzaoui           ###   ########.fr       */
+/*   Updated: 2025/04/18 01:57:39 by yzaoui           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,5 +74,14 @@ int test_ft_putfd(void);
 /*                                FONCTIONS BONUS                             */
 /* ************************************************************************** */
 
+int test_ft_lstnew(void);
+int test_ft_lstadd_front(void);
+int test_ft_lstsize(void);
+int test_ft_lstlast(void);
+int test_ft_lstadd_back(void);
+int test_ft_lstdelone(void);
+int test_ft_lstclear(void);
+int test_ft_lstiter(void);
+int test_ft_lstmap(void);
 
 #endif

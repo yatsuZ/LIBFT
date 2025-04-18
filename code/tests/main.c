@@ -6,7 +6,7 @@
 /*   By: yzaoui <yzaoui@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 11:24:01 by yzaoui            #+#    #+#             */
-/*   Updated: 2025/04/17 16:56:12 by yzaoui           ###   ########.fr       */
+/*   Updated: 2025/04/18 01:59:18 by yzaoui           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ void show_memcpy_vs_memmove(void)
 
 static void	test_part1(void)
 {
+	printf("Part 1 :\n");
 	test_ft_isalpha();	// 1
 	test_ft_isdigit();	// 2
 	test_ft_isalnum();	// 3
@@ -65,6 +66,7 @@ static void	test_part1(void)
 
 static void	test_part2(void)
 {
+	printf("Part 2 :\n");
 	test_ft_substr();	// 24
 	test_ft_strjoin();	// 25
 	test_ft_strtrim();	// 26
@@ -75,6 +77,20 @@ static void	test_part2(void)
 	test_ft_putfd();	// 31-34
 }
 
+static void	test_bonus(void)
+{
+	printf("Part bonus :\n");
+	test_ft_lstnew();		// 35
+	test_ft_lstadd_front();	// 36
+	test_ft_lstsize();		// 37
+	test_ft_lstlast();		// 38
+	test_ft_lstadd_back();	// 39
+	test_ft_lstdelone();	// 40
+	test_ft_lstclear();		// 41
+	test_ft_lstiter();		// 42
+	test_ft_lstmap();		// 43
+}
+
 int	main(void)
 {
 	// (void) argc;
@@ -82,5 +98,6 @@ int	main(void)
 
 	test_part1();
 	test_part2();
+	test_bonus();
 	return (0);
 }
