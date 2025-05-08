@@ -6,7 +6,7 @@
 #    By: yzaoui <yzaoui@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/13 11:23:49 by yzaoui            #+#    #+#              #
-#    Updated: 2025/04/17 17:45:13 by yzaoui           ###   ########.fr        #
+#    Updated: 2025/05/08 17:12:22 by yzaoui           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -97,7 +97,7 @@ MAKE_LIBFT = make -s -C $(LIBFT_PATH)
 
 ############### COMMANDE OBLIGATOIRE
 
-all: $(PROGRAM_NAME)
+all: bonus
 
 $(PROGRAM_NAME): $(PROG_OBJ)
 	$(MAKE_LIBFT)
